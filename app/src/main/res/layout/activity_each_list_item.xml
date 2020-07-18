@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_each_list_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b7f7f7"
+    tools:context="com.saisreenivas.androidmediaplayer.mywishlist.EachListItem">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="95dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"
+        android:id="@+id/title_each_item"
+        android:text="Title of your wish"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_below="@id/title_each_item"
+        android:id="@+id/body_each_item"
+        android:layout_centerHorizontal="true"
+        android:textStyle="italic"
+        android:textSize="22sp"
+        android:padding="10dp"
+        android:text="description of the wish"
+        android:layout_marginTop="100dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/body_each_item"
+        android:text="Date: 13th January 13:26pm"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/date_each_item"
+        android:textAppearance="?android:textAppearanceMedium"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/deleteButton"
+        android:text="Delete"
+        android:layout_below="@id/date_each_item"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"/>
+
+
+</RelativeLayout>

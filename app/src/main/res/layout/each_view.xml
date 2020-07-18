@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/relative"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:layout_marginRight="30dp"
+        android:id="@+id/list_image"
+        android:src="@android:drawable/ic_menu_agenda"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@id/list_image"
+        android:text="Title of the wish"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:layout_marginTop="5dp"
+        android:textSize="20sp"
+        android:id="@+id/list_title"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/list_date"
+        android:textSize="16sp"
+        android:text="Date: 13 January 13:26pm"
+        android:layout_toRightOf="@id/list_image"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/list_title"
+        android:layout_marginLeft="3dp"
+        android:textAppearance="?android:textAppearanceMedium"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_menu_moreoverflow_normal_holo_light"
+        android:layout_centerVertical="true"/>
+
+</RelativeLayout>
